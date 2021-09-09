@@ -7,6 +7,7 @@ const Students = mongoose.model('Students', {
     },
     email:{
         type:String,
+        unique: true,
     },
     class:{
         type:Number,

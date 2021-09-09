@@ -7,6 +7,7 @@ const Teacher = mongoose.model('Teaher', {
     },
     email:{
         type: String,
+        unique: true,
         required: true
     },
     subject:{
